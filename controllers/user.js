@@ -1,3 +1,4 @@
-exports.user = function(req, res, next) {
-    res.send('respond with a resource');
-  }
+exports.user = function (req, res) {
+  const response = ({ title: 'respond with a resource' });
+  res.json(response);
+};
